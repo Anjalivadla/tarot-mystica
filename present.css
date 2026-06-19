@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #120024, #05000d);
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.18;
+    z-index: -1;
+}
+
+.present-page {
+    min-height: 100vh;
+    padding: 50px 30px;
+}
+
+.present-page h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #f8d56b;
+    margin-bottom: 12px;
+}
+
+.present-page > p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.present-card {
+    width: 240px;
+    min-height: 430px;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 16px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(248,213,107,0.2);
+
+    transition: 0.4s;
+}
+
+.present-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 0 20px rgba(92, 179, 255, 0.25),
+        0 0 40px rgba(155, 92, 255, 0.2);
+}
+
+.present-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.present-card h2 {
+    font-family: 'Cinzel', serif;
+    color: #f8d56b;
+    margin-bottom: 12px;
+}
+
+.present-card p {
+    line-height: 1.6;
+}
